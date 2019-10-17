@@ -17,5 +17,14 @@ namespace CSSerialize
         public string DataType { get; set; }
         [XmlElement]
         public string GUID { get; set; }
+
+        public PlanProperty() { }
+
+        public PlanProperty(string aName, string aDataType, string aGUID)
+        {
+            Name = aName;
+            DataType = aDataType;
+            GUID = aGUID;
+        }
     }
 }

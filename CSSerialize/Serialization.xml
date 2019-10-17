@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PlanClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>PlanProperty</Name>
-  <PlanProperties />
+  <PlanProperties>
+    <Name>a</Name>
+    <DataType>a</DataType>
+    <GUID>a</GUID>
+  </PlanProperties>
 </PlanClass>

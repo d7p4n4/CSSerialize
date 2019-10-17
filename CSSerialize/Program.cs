@@ -13,14 +13,14 @@ namespace CSSerialize
         static void Main(string[] args)
         {
             List<PlanProperty> list = new List<PlanProperty>();
-            PlanProperty prop = new PlanProperty();
+            PlanProperty prop = new PlanProperty("a","a","a");
             list.Add(prop);
             Console.WriteLine(prop.GetType().Name);
 
             PlanClass pc = new PlanClass(prop.GetType().Name, list);
 
 
-            XmlSerializer xs = new XmlSerializer(pc.GetType());
+            XmlSerializer xs = new XmlSerializer(typeof(PlanClass));
 
             TextWriter txtWriter = new StreamWriter("d:\\Server\\Visual_studio\\CSSerialize\\CSSerialize\\Serialization.xml");
 
