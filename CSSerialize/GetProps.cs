@@ -25,7 +25,7 @@ namespace CSSerialize
                     string finalInnerType = innerType.Substring(innerType.IndexOf(".") + 1).Replace("]", "");
                     Console.WriteLine(finalInnerType);
 
-                    props.Add(p.Name, outType + "<" + finalInnerType + ">");
+                    props.Add(p.Name, outType + "&lt" + finalInnerType + ">");
 
                 }
                 else

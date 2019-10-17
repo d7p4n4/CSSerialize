@@ -12,24 +12,19 @@ namespace CSSerialize
     {
         static void Main(string[] args)
         {
+            List<PlanProperty> list = new List<PlanProperty>();
+            PlanProperty prop = new PlanProperty();
+            list.Add(prop);
+            Console.WriteLine(prop.GetType().Name);
 
-            Dictionary<string, string> dict = GetProps.getProps(typeof(PersonStart));
-            List<string> names = new List<string>();
-            List<string> types = new List<string>();
+            PlanClass pc = new PlanClass(prop.GetType().Name, list);
 
-            foreach(var d in dict)
-            {
-                names.Add(d.Key);
-                types.Add(d.Value);
-            }
 
-            PersonStartSerialize ps = new PersonStartSerialize(names, types);
-
-            XmlSerializer xs = new XmlSerializer(typeof(PersonStartSerialize));
+            XmlSerializer xs = new XmlSerializer(pc.GetType());
 
             TextWriter txtWriter = new StreamWriter("d:\\Server\\Visual_studio\\CSSerialize\\CSSerialize\\Serialization.xml");
 
-            xs.Serialize(txtWriter, ps);
+            xs.Serialize(txtWriter, pc);
 
             txtWriter.Close();
             /*

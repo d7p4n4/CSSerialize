@@ -44,8 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GetProps.cs" />
-    <Compile Include="PersonStart.cs" />
-    <Compile Include="PersonStartSerialize.cs" />
+    <Compile Include="PlanClass.cs" />
+    <Compile Include="PlanProperty.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
