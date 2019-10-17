@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PersonStartSerialize xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <names>
+    <string>id</string>
+    <string>name</string>
+    <string>address</string>
+    <string>age</string>
+    <string>gender</string>
+    <string>list</string>
+  </names>
+  <types>
+    <string>Int32</string>
+    <string>String</string>
+    <string>String</string>
+    <string>Int32</string>
+    <string>Boolean</string>
+    <string>List&lt;String&gt;</string>
+  </types>
+</PersonStartSerialize>
